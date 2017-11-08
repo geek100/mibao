@@ -1,11 +1,12 @@
 APP跳转参数说明
 ----------
 | 字段        | 类型    |  描述 |  示例(IOS\Android根据需要自行定义)  |
-|   ----     | -----   | :----: |
-| 香蕉        | $1      |   5    |
-| 苹果        | $1      |   6    |
-| 草莓        | $1      |       |
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ```java
 {
