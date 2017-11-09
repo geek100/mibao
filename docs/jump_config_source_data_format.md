@@ -27,8 +27,8 @@ APP点击转向具体的页面之前需要给出以下数据格式以满足我�
     "dataId": 2,
     "imgUrl": "default/20171102/2785c16044e24c80aac1b568cc430bdd.png",
     "isH5":true,
-    "url":"www.baidu.com"
-    "uniqueTag": "5bdd9be78eb14e2e9801b45121fad298"
+    "url":"www.baidu.com",
+    "uniqueTag":"5bdd9be78eb14e2e9801b45121fad298"
   }
 ]
 ```
