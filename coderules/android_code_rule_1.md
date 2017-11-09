@@ -1,3 +1,7 @@
+开发约束(review结果)
+-----
+###### 1.2017-11-09号代码review总结
+```java
 1.xml中展示默认数据文本使用tools，图片直接设置默认图;
 2.所有的跳转写至具体类中;
 4.参数定义：
@@ -8,3 +12,4 @@
 7.字符格式化项目要用String.format或MessageFormat.format;
 8.字符传换用String.value;比较用TextUtils.eques;
 9.布局中若是可点区域对该控件尽量少用margin来处理，避免可点区域太少；
+```
