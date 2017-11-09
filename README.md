@@ -7,6 +7,8 @@
 Android开发框架
 ----------
 * [OkAndroid项目快速开发框架](https://github.com/smart005/okandroid)
-
+* [代码规范]
+	* [规范文档]
+	* [开发约束(review结果)](/coderules/android_code_rule_1.md)
 IOS开发框架
 ------
