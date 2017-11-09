@@ -28,9 +28,9 @@ APP跳转参数说明
         38,
         39
       ],
-      "params": {
+      "params": [
         "id": 1000
-      },
+      ],
       "enabled": true
     }
   ]
