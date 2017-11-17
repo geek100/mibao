@@ -20,3 +20,7 @@
 * [IM沟通]
 	* [IM对接公共API](/templates/docs/im/common-api.md)
 	* [消息沟通API](/templates/docs/im/mer-user/api.md)
+
+工具
+----
+* [浏览同步工具browser-sync](http://www.browsersync.cn)
