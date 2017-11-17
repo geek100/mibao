@@ -19,4 +19,4 @@
 * [消息(服务)订阅模板](/templates/docs/ms/ms_subscriber.md)
 * [IM沟通]
 	* [IM对接公共API](/templates/docs/im/common-api.md)
-	* [商户-用户沟通API](/templates/docs/im/mer-user/api.md)
+	* [消息沟通API](/templates/docs/im/mer-user/api.md)
