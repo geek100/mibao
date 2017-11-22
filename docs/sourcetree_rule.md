@@ -1,5 +1,8 @@
 SourceTree代码分支管理规范
 -----
+
+[Git工作流指南：Gitflow工作流](http://blog.jobbole.com/76867/)
+
 ###### 1.分支概述
 ```java
 æ master为主干分支，开发人员可根据迭代或所开发的功能模块拉取分支;
