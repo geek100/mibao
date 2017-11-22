@@ -12,6 +12,7 @@
 开发框架、代码规范
 ----------
 * [OkAndroid项目快速开发框架](https://github.com/smart005/okandroid)
+* [SourceTree代码分支管理规范](/docs/sourcetree_rule.md)
 * [代码规范过程]
 	* [Android第一期]
 		* [2017-11-09号代码review总结](/coderules/android/android_code_rule_1.md)
