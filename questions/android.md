@@ -103,7 +103,8 @@ Event(事件)导致Controller改变Model或View，或者同时改变两者。
 2.String：字符串常量
 StringBuffer：字符创变量[线程安全的]
 StringBuilder：字符创变量[线程非安全的]
-从上面的名字可以看到，String是“字符创常量”，也就是不可改变的对象。对于这句话的理解你可能会产生这样一个疑问  ，比如这段代码：
+从上面的名字可以看到，String是“字符创常量”，也就是不可改变的对象。对于这句话的理解你可能会产生这样一个疑问，
+比如这段代码：
 1 String s = "abcd";
 2 s = s+1;
 3 System.out.print(s);// result : abcd1
