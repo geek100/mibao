@@ -1,6 +1,10 @@
 Android面试题
 -----
 ###### 1.基础部分
+* android的四大组件有哪些?
+```text
+Activity,Broadcast,Service,ContentProvide
+```
 * Handler的机制原理是什么?
 ```text
 Andriod提供了 Handler 和 Looper 来满足线程间的通信。Handler 先进先出原则。
