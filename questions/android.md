@@ -78,5 +78,41 @@ Event(事件)导致Controller改变Model或View，或者同时改变两者。
   若存在，则会把task中在其之上的其它Activity destory掉并调用它的onNewIntent方法。
 4.singleInstance 只有一个实例，并且这个实例独立运行在一个task中，这个task只有这个实例，不允许有别的Activity存在。
 ```
+* 以下关于内存回收说法哪一项是正确的?【3正确】
+```text
+1.必须创建一个线程来释放内存;
+2.允许主动释放无用的内存;
+3.由内存回收程序负责释放无用内存;
+4.内存回收程序可以在指定的时间释放内存对象;
+```
+* EventBus(或事件定阅)的作用是什么，它们是如何进行数据传递的?
+```text
+作用:
+   EventBus是一款针对Android优化的发布/订阅事件总线。
+   主要功能是替代Intent,Handler,BroadCast在Fragment，Activity，Service，线程之间传递消息.
+   优点是开销小，代码更优雅。以及将发送者和接收者解耦。
+使用:
+   1.自定义一个类，可以是空类也可以是字符串;作为接收消息类型;
+   2.在要接收消息的页面注册eventBus;(页面销毁后需要调用eventBus.unregister)
+   3.在接收页面定义一个接收消息的方法,onEventxxxx(3.0后自定义方法并加注解);
+   4.通过eventBus.post发送消息;
+```
+* 开发过程中经常需要对字符串进行操作,那么对于String、StringBuilder与StringBuffer有什么区别?
+```text
+1.三者在执行速度方面的比较：StringBuilder >  StringBuffer  >  String;
+2.String：字符串常量
+StringBuffer：字符创变量[线程安全的]
+StringBuilder：字符创变量[线程非安全的]
+从上面的名字可以看到，String是“字符创常量”，也就是不可改变的对象。对于这句话的理解你可能会产生这样一个疑问  ，比如这段代码：
+1 String s = "abcd";
+2 s = s+1;
+3 System.out.print(s);// result : abcd1
+我们明明就是改变了String型的变量s的，为什么说是没有改变呢? 
+其实这是一种欺骗，JVM是这样解析这段代码的：首先创建对象s，赋予一个abcd，然后再创建一个新的对象s用来执行第二行代码，
+也就是说我们之前对象s并没有变化，所以我们说String类型是不可改变的对象了，由于这种机制，每当用String操作字符串时，
+实际上是在不断的创建新的对象，而原来的对象就会变为垃圾被ＧＣ回收掉，可想而知这样执行效率会有多底。
+而StringBuffer与StringBuilder就不一样了，他们是字符串变量，是可改变的对象，每当我们用它们对字符串做操作时，实际上是在一个对象上操作的，这样就不会像String一样创建一些而外的对象进行操作了，当然速度就快了。
+```
+
 ###### 2.提高部分
 ###### 3.性能、优化与内存处理部分
