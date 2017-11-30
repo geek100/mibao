@@ -68,5 +68,15 @@ Event(事件)导致Controller改变Model或View，或者同时改变两者。
      // 不然等线程结束的时候，调用Dialog的cancel方法会抛异常的。
  }
 ```
+* Activity启动方式有哪几类，具体都有什么作用?
+```text
+1.standard 默认模式，可以不用写配置。在这个模式下，都会默认创建一个新的实例。
+  因此，在这种模式下，可以有多个相同的实例，也允许多个相同Activity叠加。
+2.singleTop 可以有多个实例，但是不允许多个相同Activity叠加。
+  即，如果Activity在栈顶的时候，启动相同的Activity，不会创建新的实例，而会调用其onNewIntent方法。
+3.singleTask 只有一个实例。在同一个应用程序中启动他的时候，若Activity不存在，则会在当前task创建一个新的实例，
+  若存在，则会把task中在其之上的其它Activity destory掉并调用它的onNewIntent方法。
+4.singleInstance 只有一个实例，并且这个实例独立运行在一个task中，这个task只有这个实例，不允许有别的Activity存在。
+```
 ###### 2.提高部分
 ###### 3.性能、优化与内存处理部分
