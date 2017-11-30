@@ -121,4 +121,18 @@ StringBuilder：字符创变量[线程非安全的]
 ```
 
 ###### 2.提高部分
+* 横竖屏切换时候 activity 的生命周期有哪些变化?
+```text
+1.不设置Activity的android:configChanges时,切屏会重新调用各个生命周期,切横屏时会执行一次,切竖屏时会执行两次;
+2.设置Activity的android:configChanges="orientation"时,切屏还是会重新调用各个生命周期,切横、竖屏时只会执行一次;
+3.设置Activity的android:configChanges="orientation|keyboardHidden"时，
+  切屏不会重新调用各个生命周期，只会执行onConfigurationChanged方法
+
+补充:
+4.当前Activity产生事件弹出Toast和AlertDialog的时候Activity的生命周期不会有改变;
+5.Activity运行时按下HOME键(跟被完全覆盖是一样的)：
+  onSaveInstanceState-->onPause-->onStop-->onRestart-->onStart--->onResume
+6.Activity未被完全覆盖只是失去焦点：onPause--->onResume
+```
+
 ###### 3.性能、优化与内存处理部分
