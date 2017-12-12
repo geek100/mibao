@@ -9,6 +9,7 @@
 		* [商品详情](/jump-config/商品详情.md)
 		* [h5页面](/jump-config/h5页面.md)
 * [Android资源库发布JCenter配置及使用](/docs/issue_jcenter_config.md)
+* [常用URL Scheme(H5换起)配置](/docs/url_scheme_config.md)
 
 开发框架、代码规范
 ----------
