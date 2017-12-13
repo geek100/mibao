@@ -1,4 +1,7 @@
 蜜宝Url Scheme配置
+
+![images](/docs/images/url_scheme_start_type.png)
+
 -------
 ###### 0.用途
 ```text
@@ -8,6 +11,11 @@
 ###### 1.启动app
 ```text
 mibaostore://
+
+//java代码换启方式
+Uri uri=Uri.parse("mibaostore://");  
+Intent intent=new Intent(Intent.ACTION_VIEW,uri);  
+startActivity(intent);
 ```
 ###### 2.商品
 ```text
