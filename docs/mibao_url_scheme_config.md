@@ -10,10 +10,10 @@
 ```
 ###### 1.启动app
 ```text
-mibaostore://
+mibaostore://tenancy
 
 //java代码换启方式
-Uri uri=Uri.parse("mibaostore://");  
+Uri uri=Uri.parse("mibaostore://tenancy");  
 Intent intent=new Intent(Intent.ACTION_VIEW,uri);  
 startActivity(intent);
 ```
@@ -21,14 +21,14 @@ startActivity(intent);
 ```text
 æ 聚合页
  [category]:可选，空为商品聚合页;非空为具体某一分类下的商品聚合页
- mibaostore://pd/[category]
+ mibaostore://tenancy/pd/[category]
 æ 详情(其中最后为参数)
- mibaostore://pd/detail/[id=?&....]
+ mibaostore://tenancy/pd/detail/[id=?&....]
 ```
 ###### 3.商户
 ```text
 æ 主页(其中最后为商户主页参数)
- mibaostore://mer/home/[...&...]
+ mibaostore://tenancy/mer/home/[...&...]
 ```
 ###### 4.剪贴板方式启动
 ```text
@@ -43,8 +43,17 @@ startActivity(intent);
 ###### 5.打开蜜宝App内部H5页面
 ```text
 æ 分享的连接地址换起(预留，可能会被第三方拦截,但以浏览器打开可以换起;)
- http://xxxxx?p=[mibaostore://协议(需要加密处理)]
+ http://xxxxx?p=[mibaostore://tenancy/协议(需要加密处理)]
  //此方式需要h5在初始化时对协议做跳转处理;
 æ H5页面里面的换起
- mibaostore://[url:http://xxxxxx]
+ mibaostore://tenancy/[url:http://xxxxxx]
 ```
+
+### Scheme与类名对应关系
+|   Describsion   |           Scheme Path           |      Android Activity Name      | IOS Controller Name |
+|:---------------:|:-------------------------------:|:-------------------------------:|:-------------------:|
+|     启动应用    | mibaostore://tenancy            | Main                            |                     |
+|     商品列表    | mibaostore://tenancy/pd/        | 【v1.0.0】Main                  |                     |
+|    商品详情页   | mibaostore://tenancy/pd/detail/ | SelfSupportGoodsDetailsActivity |                     |
+|     商户首页    | mibaostore://tenancy/mer/home/  | ShopActivity                    |                     |
+| App内部的H5页面 | mibaostore://tenancy?url=[...]  | H5WebViewActivity               |                     |
