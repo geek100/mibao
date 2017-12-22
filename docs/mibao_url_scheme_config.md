@@ -50,10 +50,10 @@ startActivity(intent);
 ```
 
 ### Scheme与类名对应关系
-|   Describsion   	|           Scheme Path           	|      Android Activity Name      	| IOS Controller Name 	|
-|:---------------:	|:-------------------------------:	|:-------------------------------:	|:-------------------:	|
-| 启动应用        	| mibaostore://tenancy            	| Main                            	|                     	|
-| 商品列表        	| mibaostore://tenancy/pd/        	| 【v1.0.0】Main                  	|                     	|
-| 商品详情页      	| mibaostore://tenancy/pd/detail/ 	| SelfSupportGoodsDetailsActivity 	|                     	|
-| 商户首页        	| mibaostore://tenancy/mer/home/  	| ShopActivity                    	|                     	|
-| App内部的H5页面 	| mibaostore://tenancy?url=[...]  	| H5WebViewActivity               	|                     	|
+| Describsion     | Scheme Path                     | Android Activity Name           | IOS Controller Name                         |
+|-----------------|---------------------------------|---------------------------------|---------------------------------------------|
+| 启动应用        | mibaostore://tenancy            | Main                            | DB_HomePageTopScrollController              |
+| 商品列表        | mibaostore://tenancy/pd/        | 【v1.0.0】Main                  | DB_HomePageTopScrollController              |
+| 商品详情页      | mibaostore://tenancy/pd/detail/ | SelfSupportGoodsDetailsActivity | DBProject.DB_GoodsDetailController          |
+| 商户首页        | mibaostore://tenancy/mer/home/  | ShopActivity                    | DBProject.DB_HomePageShopHomePageController |
+| App内部的H5页面 | mibaostore://tenancy?url=[...]  | H5WebViewActivity               | DBProject.DB_CommonWebViewController        |
