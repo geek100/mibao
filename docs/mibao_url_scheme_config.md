@@ -59,8 +59,9 @@ startActivity(intent);
 |  10005 | App内部的H5页面 | mibaostore://tenancy?url=[...]  | H5WebViewActivity               | DBProject.DB_CommonWebViewController        |
 
 ### 页面参数
-| Number | Scheme Params                 | Android Params                                                                                                                | IOS Params                                                                                                                           |
-|:------:|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-|  10003 | //商品id gid                  | //商品id GOODS_ID                                                                                                             | //商品id goodsID                                                                                                                     |
-|  10004 | //商户id merId                | //商户id MERCHANT_ID                                                                                                          | //商户id merchantId                                                                                                                  |
-|  10005 | //url地址 url //加载类型 type | //url地址 \nwebUrl //页面加载类型   type   0:url连接直接展示页面即可；   1:html代码;[一般用于h5通过scheme启动输入]   2:api方式; | //url地址    webUrl //页面加载类型    type    0:url连接直接展示页面即可；    1:html代码;[一般用于h5通过scheme启动输入]    2:api方式; |
+| Number | Scheme Params | Android Params | IOS Params | Describsion                                       |
+|:------:|---------------|----------------|------------|---------------------------------------------------|
+|  10003 | gid           | GOODS_ID       | goodsID    | 商品id                                            |
+|  10004 | merId         | MERCHANT_ID    | merchantId | 商户id                                            |
+|  10005 | url           | [url] [type-]  | webUrl     | url地址                                           |
+|        | type          | type           | type       | 0:url,1:html代码,2:api,一般指有额外的接口需要请求 |
