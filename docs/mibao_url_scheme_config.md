@@ -65,3 +65,11 @@ startActivity(intent);
 |  10004 | merId         | MERCHANT_ID    | merchantId | 商户id                                            |
 |  10005 | url           | [url] [type-]  | webUrl     | url地址                                           |
 |        | type          | type           | type       | 0:url,1:html代码,2:api,一般指有额外的接口需要请求 |
+
+### 人脸验证成功回调Scheme Url
+| Scheme URL                                         | Describsion                                 |
+|----------------------------------------------------|---------------------------------------------|
+| mibaostore://tenancy/subscribe/success[/?回调参数] | 预约成功回调页面;具体参数跟在scheme url后面 |
+|                                                    |                                             |
+|                                                    |                                             |
+|                                                    |                                             |
