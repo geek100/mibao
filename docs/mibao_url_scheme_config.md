@@ -70,6 +70,3 @@ startActivity(intent);
 | Scheme URL                                         | Describsion                                 |
 |----------------------------------------------------|---------------------------------------------|
 | mibaostore://tenancy/subscribe/success[/?回调参数] | 预约成功回调页面;具体参数跟在scheme url后面 |
-|                                                    |                                             |
-|                                                    |                                             |
-|                                                    |                                             |
