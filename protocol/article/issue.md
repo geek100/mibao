@@ -5,11 +5,11 @@
 --json
 ```json
 {
-  "subject": '文章内容',
+  "subject": "文章内容",
   "type": 0,
   "position": 0,
   "style": {
-    "textColor": '#323232',
+    "textColor": "#323232",
     "textSize": 12,
     "lineSpacingMultiplier": 1.5,
     "firstLineIndentation": 0,
@@ -20,7 +20,6 @@
 }
 ```
 --字段
-```text
 | 字段                  | 描述                                         |
 |-----------------------|----------------------------------------------|
 | subject               | 文章内容                                     |
@@ -33,4 +32,3 @@
 | isBlod                | 是否加粗糙                                   |
 | alignType             | 对齐方式(0:左对齐;1:右对齐;)                 |
 | paragraphSpace        | 对齐方式(0:左对齐;1:右对齐;)                 |
-```text
