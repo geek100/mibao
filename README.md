@@ -30,6 +30,11 @@
 	* [IM对接公共API](/templates/docs/im/common-api.md)
 	* [消息沟通API](/templates/docs/im/mer-user/api.md)
 
+协议
+----
+* 文章
+	* [发布协议](/protocol/article/issue.md)
+
 工具
 ----
 * [浏览同步工具browser-sync](http://www.browsersync.cn)
