@@ -23,12 +23,12 @@ startActivity(intent);
  [category]:可选，空为商品聚合页;非空为具体某一分类下的商品聚合页
  mibaostore://tenancy/pd/[category]
 æ 详情(其中最后为参数)
- mibaostore://tenancy/pd/detail/[id=?&....]
+ mibaostore://tenancy/pd/detail/[?id=&....]
 ```
 ###### 3.商户
 ```text
 æ 主页(其中最后为商户主页参数)
- mibaostore://tenancy/mer/home/[...&...]
+ mibaostore://tenancy/mer/home/[?...&...]
 ```
 ###### 4.剪贴板方式启动
 ```text
