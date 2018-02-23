@@ -50,13 +50,13 @@ startActivity(intent);
 ```
 
 ### Scheme与类名对应关系
-| Number | Describsion     | Scheme Path                        | Android Activity Name           | IOS Controller Name                         |
-|:------:|-----------------|------------------------------------|---------------------------------|---------------------------------------------|
-|  10000 | 启动应用        | mibaostore://tenancy               | Main                            | DB_HomePageTopScrollController              |
-|  10002 | 商品列表        | mibaostore://tenancy/pd/           | Main                            | DB_HomePageTopScrollController              |
-|  10003 | 商品详情页      | mibaostore://tenancy/pd/detail/    | SelfSupportGoodsDetailsActivity | DBProject.DB_GoodsDetailController          |
-|  10004 | 商户首页        | mibaostore://tenancy/mer/home/     | ShopActivity                    | DBProject.DB_HomePageShopHomePageController |
-|  10005 | App内部的H5页面 | mibaostore://tenancy/h5/?url=[...] | H5WebViewActivity               | DBProject.DB_CommonWebViewController        |
+| Number | Describsion     | SchemeType | Scheme Path                        | Android Activity Name           | IOS Controller Name                         |
+|:------:|-----------------|------------|------------------------------------|---------------------------------|---------------------------------------------|
+|  10000 | 启动应用        |      0     | mibaostore://tenancy               | Main                            | DB_HomePageTopScrollController              |
+|  10002 | 商品列表        |      1     | mibaostore://tenancy/pd/           | Main                            | DB_HomePageTopScrollController              |
+|  10003 | 商品详情页      |      2     | mibaostore://tenancy/pd/detail/    | SelfSupportGoodsDetailsActivity | DBProject.DB_GoodsDetailController          |
+|  10004 | 商户首页        |      3     | mibaostore://tenancy/mer/home/     | ShopActivity                    | DBProject.DB_HomePageShopHomePageController |
+|  10005 | App内部的H5页面 |     -1     | mibaostore://tenancy/h5/?url=[...] | H5WebViewActivity               | DBProject.DB_CommonWebViewController        |
 
 ### 页面参数
 | Number | Scheme Params | Android Params | IOS Params | Describsion                                       |
