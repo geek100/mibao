@@ -8,6 +8,19 @@
 3.同时要符合各个段兼容;
 ```
 
+###### 0.区分扫码类型
+```text
+{
+  "sc":xxxx,
+  "sk":,
+  "st":"content/url/1[类型]"
+}
+
+sc:内容
+sk:加密key,取固定参考值的最后一位
+st:content[内容]/url/1-商户[类型]
+```
+
 ###### 1.二维码内容
 ```text
 https://m.mibaostore.com/merchant/#/index?stype=1&merId=236
