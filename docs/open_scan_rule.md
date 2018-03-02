@@ -10,7 +10,7 @@
 
 ###### 1.二维码内容
 ```text
-https://m.mibaostore.com/merchant/#/index?stype=1&appId=4567834567&merId=236
+https://m.mibaostore.com/merchant/#/index?stype=1&merId=236
 
 参数:
 1.stype:1-商户;
