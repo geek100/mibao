@@ -3,6 +3,8 @@
 ###### 0.Api配置
 ```java
 {
+  //生效时间戳
+  "effectTime":1520228731,
   //允许url地址被识别的头协议，其它均不被识别
   "allowUrlProtocols": [
     "http://",

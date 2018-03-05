@@ -45,7 +45,8 @@ https://m.mibaostore.com/merchant/#/index?stype=1&merId=236
     "showType": "逻辑处理过程中显示的类型,一般指page或alert",
     "schemePath": "scheme路径,用于获取规则(例):/mer/home/",
     "appId": "45609875679(客户端appId,用于验证此次活动是否符合的客户端来扫码)",
-    "minVersion": 34//app最小版本,用于验证当前应用是否符合版本要求
+    "minVersion": 34//app最小版本,用于验证当前应用是否符合版本要求,
+    "effectTime":1520228731,//生效时间戳
   },
   "periodRule": {
     //规则内容,具体的规则内部传输
