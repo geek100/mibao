@@ -27,6 +27,7 @@
 
 组件、模板
 ------
+* [N组合视图(适用于原生活动区域展示)](/templates/docs/n_combination_view.md)
 * [消息(服务)订阅模板](/templates/docs/ms/ms_subscriber.md)
 * [IM沟通]
 	* [IM对接公共API](/templates/docs/im/common-api.md)
@@ -36,7 +37,6 @@
 ----
 * 文章
 	* [发布协议](/protocol/article/issue.md)
-
 工具
 ----
 * [浏览同步工具browser-sync](http://www.browsersync.cn)
