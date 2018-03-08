@@ -12,8 +12,10 @@
 * [常用URL Scheme(H5换起)配置](/docs/url_scheme_config.md)
 	* [蜜宝Url Scheme配置](/docs/mibao_url_scheme_config.md)
 	* [蜜宝商户端Url Scheme配置](/docs/mibaomer_url_scheme_config.md)
-* [扫描配置](/docs/scan_config.md)
+* 扫码
+	* [URL过滤规则](/docs/scan_config.md)
 	* [对外二维码规则定义与获取规范](/docs/open_scan_rule.md)
+	* [商户二维码生成规则](/docs/mer_scan_create_rule.md)
 
 开发框架、代码规范
 ----------
