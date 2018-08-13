@@ -38,7 +38,7 @@
 协议
 ----
 * 文章
-	* [发布协议](/protocol/article/issue.md)
+	* [文本数据格式](/protocol/article/issue.md)
 工具
 ----
 * [浏览同步工具browser-sync](http://www.browsersync.cn)
